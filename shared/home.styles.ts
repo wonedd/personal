@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin:0 auto;
   
   max-width:1440px;
-  background-color:#474747;
+ 
   font-family: 'Comfortaa';   
 `;
 

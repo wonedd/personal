@@ -102,11 +102,15 @@ export const globalStyles = (
     
 }
 @keyframes fadeInUp {
+  from{
+    opacity: 0;
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes splash {
    from{
      letter-spacing:6px

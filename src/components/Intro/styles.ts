@@ -85,19 +85,20 @@ export const Profile = styled.div`
 export const Cta = styled.button`
   all:unset;
   cursor: pointer;
-
-  
+  opacity: 1;
+  animation: fadeInUp 5s ease-in 1; 
   display: flex;
   padding:15px;
   border:2px solid #f7f7f7;
   transition:0.5s all;
+  
+ 
 
   &:hover{
   background: linear-gradient(45deg, #474747,#515151,#403d39,#2222,#908E8E,#c1c1c1);
   background-size: 400% 400%;
   animation: mygradient 3s ease 1;
-  border-color:rgba(0,0,0,0.0)
-  
+  border-color:rgba(0,0,0,0.0);
 }
 
 &:active {
