@@ -105,13 +105,8 @@ export const Profile = styled.div`
 export const Cta = styled.button`
   all:unset;
   cursor: pointer;
-<<<<<<< HEAD
   color:#fafaff;
   
-=======
-  opacity: 1;
-  animation: fadeInUp 5s ease-in 1; 
->>>>>>> fc479be096f9e1f1be23e86ff663905b78094f40
   display: flex;
   padding:15px;
   border:2px solid #fafaff;
@@ -120,17 +115,10 @@ export const Cta = styled.button`
  
 
   &:hover{
-<<<<<<< HEAD
     animation: MoveUpDown 1.2s linear infinite;
     border-color: #AAF0D1;
     color:#AAF0D1;
 
-=======
-  background: linear-gradient(45deg, #474747,#515151,#403d39,#2222,#908E8E,#c1c1c1);
-  background-size: 400% 400%;
-  animation: mygradient 3s ease 1;
-  border-color:rgba(0,0,0,0.0);
->>>>>>> fc479be096f9e1f1be23e86ff663905b78094f40
 }
 
 &:active {
