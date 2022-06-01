@@ -102,17 +102,24 @@ export const globalStyles = (
     
 }
 @keyframes fadeInUp {
+  from{
+    opacity: 0;
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+<<<<<<< HEAD
 @keyframes fadeInUpGoat {
   to {
     opacity: 0.6;
     transform: translateY(0);
   }
 }
+=======
+
+>>>>>>> fc479be096f9e1f1be23e86ff663905b78094f40
 @keyframes splash {
    from{
      letter-spacing:6px

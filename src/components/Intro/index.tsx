@@ -12,7 +12,7 @@ export function Intro() {
         <IoPrism style={{fontSize:'5rem', color:'#f7f7f7',transformStyle:'preserve-3d', animation:'flip 10s linear infinite'}}/>
         <div>
         <Title><strong>Hi, I'm Marcos.</strong></Title>
-        <SubTitle>web developer also writer and a cat lover</SubTitle>
+        <SubTitle>web developer, also writer and a cat lover</SubTitle>
         </div>
         <Cta onClick={()=>{ push('/Waiting')}}>VIEW PORTFOLIO</Cta>
       </Main>
