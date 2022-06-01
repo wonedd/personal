@@ -32,7 +32,7 @@ export const globalStyles = (
         height: 100%;
       }
       body {
-        background-color:#474747;
+        background-color:var(--bgColor3);
         overflow-x: hidden;
       }
       body,
@@ -110,7 +110,16 @@ export const globalStyles = (
     transform: translateY(0);
   }
 }
+<<<<<<< HEAD
+@keyframes fadeInUpGoat {
+  to {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+}
+=======
 
+>>>>>>> fc479be096f9e1f1be23e86ff663905b78094f40
 @keyframes splash {
    from{
      letter-spacing:6px
@@ -134,25 +143,41 @@ export const globalStyles = (
     background: transparent;
   }
 }
+@keyframes blinkText {
+  to {
+    color: transparent;
+  }
+}
+@keyframes flip{
+    from{
+        
+        transform:rotateY(360deg);
+    }
 
+    to{
+        
+        transform:rotateY(-360deg);
+
+    }
+}
+
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
       
       :root {
-        --gray50: #f7f7f7;
-        --gray100: #e1e1e1;
-        --gray200: #cfcfcf;
-        --gray250: #c4c4c4;
-        --gray300: #b1b1b1;
-        --gray350: #b3b3b3;
-        --gray380: #a0a0a0;
-        --gray400: #9e9e9e;
-        --gray500: #7e7e7e;
-        --gray550: #7f7f7f;
-        --gray600: #626262;
-        --gray700: #515151;
-        --gray800: #3b3b3b;
-        --gray900: #222222;
-        --yellow500: #ffc107;
-        --red500: #c62828;
+        --bgColor:#474747;
+        --bgColor2:#011627;
+        --bgColor3:#1B1B1B;
+        --bgColor4:#8a817c;
+        --bgColor5:#463f3a;
+        --bgColor6:#403d39;
+        --bgColor7:#5c6b73;
+        --bgColor8:#7c7a7a;
+        --bgColor9:#284b63;
       }
     `}
   />

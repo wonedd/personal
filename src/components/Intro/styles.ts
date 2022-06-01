@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { media } from '../../../shared/global';
 
 export const Container = styled.div`
   display: flex;
@@ -20,11 +21,21 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
     gap:1rem;
-  }
-`;
+   }
+
+  ${media.maxMobile}{
+    text-align: center;
+     }
+
+  svg{
+    ${media.minlaptop}{
+      display:none;
+      }
+    }   
+  `;
 export const Title = styled.div`
   font-family:'Comfortaa';
-  color:#f7f7f7;
+  color:#f4f9e9;
   
   font-size:2.5rem;
   letter-spacing:6px;
@@ -37,6 +48,11 @@ export const Title = styled.div`
     font-size:2.5rem;
     font-weight:300;
   }
+  ${media.maxMobile}{
+      font-size:2rem;
+      margin:0 auto;
+  }
+  
 
   strong{
   &::before,
@@ -50,7 +66,7 @@ export const Title = styled.div`
   }
 
   &::before {
-  background: #474747;
+    background:var(--bgColor3);
   animation: typewriter 3s
   steps(24) 1s forwards;
 }
@@ -67,12 +83,16 @@ export const Title = styled.div`
 `;
 
 export const SubTitle = styled.h3`
-  color: hsl(0 0% 0% / 0.5);
+  color:#b4b8ab;
   font-size: 2rem;
   font-weight: 400;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 5s ease forwards ; 
+
+  ${media.maxMobile}{
+    font-size:1.5rem;
+  }
 `;
 
 export const Profile = styled.div`
@@ -85,20 +105,32 @@ export const Profile = styled.div`
 export const Cta = styled.button`
   all:unset;
   cursor: pointer;
+<<<<<<< HEAD
+  color:#fafaff;
+  
+=======
   opacity: 1;
   animation: fadeInUp 5s ease-in 1; 
+>>>>>>> fc479be096f9e1f1be23e86ff663905b78094f40
   display: flex;
   padding:15px;
-  border:2px solid #f7f7f7;
+  border:2px solid #fafaff;
   transition:0.5s all;
   
  
 
   &:hover{
+<<<<<<< HEAD
+    animation: MoveUpDown 1.2s linear infinite;
+    border-color: #AAF0D1;
+    color:#AAF0D1;
+
+=======
   background: linear-gradient(45deg, #474747,#515151,#403d39,#2222,#908E8E,#c1c1c1);
   background-size: 400% 400%;
   animation: mygradient 3s ease 1;
   border-color:rgba(0,0,0,0.0);
+>>>>>>> fc479be096f9e1f1be23e86ff663905b78094f40
 }
 
 &:active {

@@ -1,17 +1,34 @@
-import { Container, Nav } from './styles'
+import { Container, Nav, MobileButton } from './styles'
 import { Logo } from '../Logo'
+import Link from 'next/link'
+import React, { useState } from 'react'
+import { NavItem } from './NavItem'
 
-export function Header (){
+export function Header() {
 
-  return(
-    <Container>
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleButton = () => {
+    var btn = document.getElementById('btn')
+
+    btn.classList.toggle('active')
+
+    setIsOpen(!isOpen)
+
+  }
+
+  return (
+    <>
+      <MobileButton id="btn" onClick={handleButton} />
+      <Container isOpen={isOpen}>
         <Logo />
-      <Nav>
-        <a>WORK</a>
-        <a>CONTACT</a>
-        <a>STORE</a>
-        <a>ARTICLES</a>
-      </Nav>      
-    </Container>
+        <Nav>
+          <NavItem title="WORK" />
+          <Link href="/Waiting">CONTACT</Link>
+          <Link href="/Waiting">STORE</Link>
+          <Link href="/Waiting">ARTICLES</Link>
+        </Nav>
+      </Container>
+    </>
   )
 }
